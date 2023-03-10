@@ -32,7 +32,3 @@ mongoose
   .catch((error) => {
     console.log(error);
   });
-
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("frontend/build"));
-}
